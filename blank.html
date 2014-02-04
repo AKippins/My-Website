@@ -1,0 +1,128 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>finished template</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('#wrap_login').hide();
+  $('.loginscroll').click(function() {
+    $('#wrap_login').slideToggle(400);
+    return false;
+  });
+});
+</script>
+</head>
+<body>
+
+<div id="wrap_login">
+  <div id="login">
+     <form action="#" id="loginform" method="post">
+    	<fieldset>
+    	<input type="text" class="logininput" name="login" value="login" />
+        <input type="password" class="logininput" name="password" value="password" />
+    	<input type="submit" class="loginbutton" value="sign in" />
+    	</fieldset>
+  	</form>
+    <a href="#">Forgot Password?</a>
+    <a href="#">Create a New Account</a>
+    <a href="" class="loginscroll">Close this panel</a>
+  </div>
+</div>
+
+<div id="wrap_header">
+  <div id="header">
+	<a href="index.html"><img src="graf/logo.png" alt="Logo" class="logo" /></a>
+  <form action="#" id="searchform" method="get">
+    	<fieldset>
+    	<input type="text" id="searchinput" name="s" value="search form"
+    	onblur="if(this.value.length == 0) this.value='search form';"
+    	onclick="if(this.value == 'search form') this.value='';" />
+    	<input type="submit" class="searchbutton" value="search" />
+    	</fieldset>
+  	</form>
+  </div>
+</div>
+
+<div id="wrap_menu">
+  <div id="menu">
+	 <ul id="mainmenu">
+   		<li><a href="index.html">About</a></li>
+    	<li><a href="products.html">Our products</a></li>
+    	<li><a href="download.html">Download</a></li>
+    	<li><a href="contact.html">Contact</a></li>
+    	<li><a href="" class="loginscroll">Client zone</a></li>
+  	 </ul>
+	<a href="#" id="calltoaction">Catalog <span>2011</span></a>
+  </div>
+</div>
+
+
+<div id="wrap_content">
+  <div id="content">
+	 
+  </div>
+</div>
+
+
+<div id="wrap_newsletter">
+  <div id="newsletter">
+	 <h1>Newsletter</h1>
+     <p>Want to know more?<br>Send us your e-mail.</p>
+     <form action="#" id="newsletterform" method="get">
+    	<fieldset>
+    	<input type="text" id="newsletterinput" name="n" value="e-mail address"
+    	onblur="if(this.value.length == 0) this.value='e-mail address';"
+    	onclick="if(this.value == 'e-mail address') this.value='';" />
+    	<input type="submit" class="newsletterbutton" value="join" />
+    	</fieldset>
+  	</form>
+  </div>
+</div>
+
+<div id="wrap_footer">
+  <div id="footer">
+                <div id="block1">
+                	<ul>
+                      <li><a href="index.html">About us</a></li>
+                      <li><a href="products.html">Our products</a></li>
+                      <li><a href="download.html">Download</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="" class="loginscroll">Client zone</a></li>
+                      <li><a href="http://maciejkwas.pl"><b>Catalog 2011</b></a></li>
+                      <li>&nbsp;</li>
+                      <li><a href="http://photoshoptutorials.ws">Our certficates</a></li>
+                      <li><a href="http://prowseed.com">Privacy policy</a></li>
+                      <li><a href="http://maciejkwas.pl">Terms of service</a></li>
+                      <li><a href="http://maciejkwas.pl">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div id="block2">
+                <h1>We are looking for business partners</h1>
+                <p>This is my boss, Jonathan Hart, a self-made millionaire, he's quite a guy. This is Mrs H., she's gorgeous,
+                she's one lady who knows how to take care of herself. By the way, my name is Max. I take care of both of them, 
+                which ain't easy, 'cause when they met it was MURDER!</p>
+                </div>
+                
+                <div id="block3">
+                      <h1>Help centre</h1>
+                      <div id="help">
+                      <div id="circle"><span>+48</span></div><p class="help_phone">792 000 111</p>
+                      </div>
+                      <h1 class="margintop30">Copyrights</h1>
+                      <p class="margintop20">&copy; 2011 - JAROOM Refrigeration LLC.<br>Design by <a href="http://prowseed.com">Maciej Kwas</a> for <a href="http://photoshoptutorials.ws">pstutorials.ws</a></p>
+                </div>
+    <br class="clear" />
+</div>
+</div>
+
+</body>
+</html>
+
+<!-- Maciej Kwas for photoshoptutorials.ws -->

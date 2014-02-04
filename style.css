@@ -1,3 +1,105 @@
-html{
-	background-image: url();
+html { 
+	font: 12px Arial, 
+	Helvetica, sans-serif; 
+	text-align: left; 
+	background: url(graf/background.jpg); 
+}
+
+body { 
+	background: url(graf/topbg.jpg) 
+	top center repeat-x; 
+} 
+
+#wrap_header { 
+	width:100%; 
+	margin:0 auto; 
+	height:157px; 
+	background: 
+	url(graf/togradient.jpg) 
+	top center no-repeat; 
+} 
+
+#header { 
+	width:980px; 
+	height:157px; 
+	margin:0 auto; 
+	position:relative; 
+}
+
+#header .logo { 
+	height:389px;
+	width:171px;
+	position: absolute; 
+	left:20px; 
+	top:34px; /* distance from top */
+	display:block;
+}
+
+#wrap_menu {
+	width:100%; 
+	margin:0 auto; 
+	height:49px; /* height measured in psd file */
+} 
+
+#wrap_menu #menu { 
+	width:980px; 
+	margin:0 auto; 
+	height:49px; 
+	position:relative; 
+} 
+
+#mainmenu { 
+	position: absolute; 
+	top:0; left: 20px; 
+	list-style: none; 
+	height: 49px; 
+	width: 741px; /* menu shape’s width */
+	padding-left: 20px; /* so the first element will be pushed from beginning of the shape */
+	background: url(graf/menubg.png) no-repeat 0 0; /* menu shape */
+} 
+
+#mainmenu li a { 
+	float: left; 
+	display: inline-block; 
+	height: 48px; 
+	padding: 15px 12px 2px 12px; /* paddings for text positioning */
+	background: none; 
+	color: #1f1f1f; 
+	text-decoration: none; 
+	font-size: 16px; 
+	margin-right: 16px; /* to make distance between menu elements */
+} 
+
+#mainmenu li:hover a { 
+	background: url(graf/menuactive.jpg) no-repeat 0 0; 
+	background-size: 100% 48px; /* to stretch the hover background */
+	-o-background-size: 100% 48px; /* for Opera 9.5 */
+	-webkit-background-size: 100% 48px; /* for Safari 3 and Chrome 1 */
+	-khtml-background-size: 100% 48px; /* for Konqueror */
+	-moz-background-size: 100% 48px; /* for firefox 3.6 */
+	color:#fff8de; 
+} 
+
+#calltoaction { 
+	position: absolute; 
+	top:0; right:20px; 
+	width:194px; 
+	height:34px; /* 49px minus padding-top value */
+	background: url(graf/calltoaction.png) no-repeat 0 0; 
+	text-align: center; 
+	padding-top: 15px; /* to push text vertically from top */
+	font-size: 16px; 
+	color: #fff; 
+	text-decoration: none;
+	text-shadow: 0px 1px 1px #b3830c; /* simulation of photoshop’s shadow */
+} 
+
+#calltoaction:hover { 
+	background: url(graf/calltoaction.png) no-repeat 0 -49px; 
+} 
+
+#calltoaction span { 
+	font-family: Georgia, “Times New Roman”, Times, serif; 
+	font-style: italic; 
+	font-weight: bold; 
 }
